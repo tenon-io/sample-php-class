@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tenon.io PHP Demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<main role="main">
+
+    <form method="post" action="example-full.php.php">
+        <h1>Tenon.io PHP Demo</h1>
+        <section>
+            <h2>What to test</h2>
+
+            <label for="url"><span>Web Page URL</span>
+                <input type="text" name="url" id="url"/>
+            </label>
+
+            <div>OR:</div>
+
+            <label for="src"><span>Document Source</span>
+                <textarea name="src" id="src"></textarea>
+            </label>
+
+            <fieldset>
+                <legend>Is this only part of a document?</legend>
+                <label for="fragment-no">
+                    <input type="radio" name="fragment" id="fragment-no" value="0" checked/>No
+                </label>
+                <label for="fragment-yes">
+                    <input type="radio" name="fragment" id="fragment-yes" value="1"/>Yes
+                </label>
+            </fieldset>
+        </section>
+        <section>
+            <h2>How to Test <span>All items below are optional</span></h2>
+            <fieldset>
+                <legend>Minimum Certainty</legend>
+                <label for="certainty-0">
+                    <input type="radio" name="certainty" id="certainty-0" value="0" checked/>0%
+                </label>
+                <label for="certainty-20">
+                    <input type="radio" name="certainty" id="certainty-20" value="20"/>20%
+                </label>
+                <label for="certainty-40">
+                    <input type="radio" name="certainty" id="certainty-40" value="40"/>40%
+                </label>
+                <label for="certainty-60">
+                    <input type="radio" name="certainty" id="certainty-60" value="60"/>60%
+                </label>
+                <label for="certainty-80">
+                    <input type="radio" name="certainty" id="certainty-80" value="80"/>80%
+                </label>
+                <label for="certainty-100">
+                    <input type="radio" name="certainty" id="certainty-100" value="100"/>100%
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Minimum Priority</legend>
+                <label for="priority-0">
+                    <input type="radio" name="priority" id="priority-0" value="0" checked/>0%
+                </label>
+                <label for="priority-20">
+                    <input type="radio" name="priority" id="priority-20" value="20"/>20%
+                </label>
+                <label for="priority-40">
+                    <input type="radio" name="priority" id="priority-40" value="40"/>40%
+                </label>
+                <label for="priority-60">
+                    <input type="radio" name="priority" id="priority-60" value="60"/>60%
+                </label>
+                <label for="priority-80">
+                    <input type="radio" name="priority" id="priority-80" value="80"/>80%
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Page Importance</legend>
+                <label for="importance-1">
+                    <input type="radio" name="importance" id="importance-1" value="1" checked/>Low
+                </label>
+                <label for="importance-2">
+                    <input type="radio" name="importance" id="importance-2" value="2"/>Medium
+                </label>
+                <label for="importance-3">
+                    <input type="radio" name="importance" id="importance-3" value="3"/>High
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Minimum WCAG Level</legend>
+                <label for="level-AAA">
+                    <input type="radio" name="level" id="level-AAA" value="AAA" checked/>AAA
+                </label>
+                <label for="level-AA">
+                    <input type="radio" name="level" id="level-AA" value="AA"/>AA
+                </label>
+                <label for="level-A">
+                    <input type="radio" name="level" id="level-A" value="A"/>A
+                </label>
+            </fieldset>
+
+            <label for="uaString"><span>User-Agent String</span>
+                <select name="uaString" id="uaString">
+                    <option selected
+                            value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36">
+                        Chrome
+                    </option>
+                    <option value="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)">Internet Explorer
+                    </option>
+                    <option value="Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14">Opera</option>
+                    <option value="Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0">Firefox</option>
+                </select>
+            </label>
+
+            <label for="viewport"><span>Viewport Size</span>
+                <select name="viewport" id="viewport">
+                    <option>800x600</option>
+                    <option selected>1024x768</option>
+                    <option>1280x800</option>
+                    <option>1280x1024</option>
+                    <option>1366x768</option>
+                    <option>1920x1080</option>
+                    <option>1440x900</option>
+                    <option>1600x900</option>
+                    <option>1680x1050</option>
+                    <option>1920x1200</option>
+                    <option>1360x768</option>
+                    <option>2560x1440</option>
+                    <option>320x480</option>
+                    <option>640x960</option>
+                </select>
+            </label>
+        </section>
+        <section>
+            <h2>Report Options</h2>
+
+            <label for="systemID"> <span>System ID</span>
+                <input type="text" name="systemID" id="systemID"/>
+            </label>
+
+            <label for="reportID"> <span>Report ID</span>
+                <input type="text" name="reportID" id="reportID"/>
+            </label>
+
+            <label for="docID"> <span>Document ID</span>
+                <input type="text" name="docID" id="docID"/>
+            </label>
+
+            <fieldset>
+                <legend>Do you want reference material with the results?</legend>
+                <label for="ref-1">
+                    <input type="radio" name="ref" id="ref-1" value="1" checked/>Yes
+                </label>
+                <label for="ref-0">
+                    <input type="radio" name="ref" id="ref-0" value="0"/>No
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Do you want Tenon to store the results?</legend>
+                <label for="store-0">
+                    <input type="radio" name="store" id="store-0" value="0" checked/>No
+                </label>
+                <label for="store-1">
+                    <input type="radio" name="store" id="store-1" value="1"/>Yes
+                </label>
+            </fieldset>
+        </section>
+
+        <div id="submitWrapper">
+            <input type="submit" name="submit" id="submit" value="Submit"/>
+        </div>
+    </form>
+</main>
+</body>
+</html>

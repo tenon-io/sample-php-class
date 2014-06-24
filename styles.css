@@ -1,0 +1,74 @@
+html, body {
+    color: #000;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main {
+    padding: 0 2em;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 500px;
+}
+
+section, #submitWrapper {
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #eee;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    border-bottom: 1px solid #666;
+    margin-bottom: .5em;
+}
+
+h2 span {
+    font-weight: normal;
+    font-size: medium;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+legend {
+    color: #000;
+}
+
+label span {
+    display: block;
+}
+
+label, textarea, select, input[type="text"] {
+    margin-bottom: 1em;
+}
+
+textarea, input[type="text"] {
+    width: 400px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+}
