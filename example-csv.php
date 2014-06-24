@@ -1,4 +1,6 @@
 <?php
+require('config.php');
+require('tenonTest.class.php');
 
 $expectedPost = array('src', 'url', 'level', 'certainty', 'priority',
     'docID', 'systemID', 'reportID', 'viewport',
@@ -24,7 +26,7 @@ if (false === $tenon->decodeResponse()) {
     $content .= '<pre>' . var_export($tenon->tenonResponse, true) . '</pre>';
     echo $content;
 } else {
-    if(false !== $tenon->writeResultsToCSV(CSV_FILE_PATH)){
+    if (false !== $tenon->writeResultsToCSV(CSV_FILE_PATH)) {
         echo 'CSV file written!';
     }
 }

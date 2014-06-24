@@ -1,12 +1,13 @@
 <?php
+
 /**
  * Project: sample-php-class
  * User: karlgroves
  * Date: 6/23/14
  * Time: 3:58 PM
  */
-
-class tenonOutput extends tenonTest{
+class tenonOutput extends tenonTest
+{
 
     protected $url, $opts;
     public $tenonResponse;
@@ -46,11 +47,11 @@ class tenonOutput extends tenonTest{
      *
      * @return string
      */
-    public static function boolToString($val){
-        if($val == '1'){
+    public static function boolToString($val)
+    {
+        if ($val == '1') {
             return 'Yes';
-        }
-        else{
+        } else {
             return 'No';
         }
     }
@@ -144,7 +145,7 @@ class tenonOutput extends tenonTest{
             for ($x = 0; $x < $count; $x++) {
                 $i++;
                 $output .= '<div class="issue">';
-                $output .= '<div>' . $i .': ' . $issues[$x]['errorTitle'] . '</div>';
+                $output .= '<div>' . $i . ': ' . $issues[$x]['errorTitle'] . '</div>';
                 $output .= '<div>' . $issues[$x]['errorDescription'] . '</div>';
                 $output .= '<div><pre><code>' . trim($issues[$x]['errorSnippet']) . '</code></pre></div>';
                 $output .= '<div>Line: ' . $issues[$x]['position']['line'] . '</div>';
@@ -161,6 +162,7 @@ class tenonOutput extends tenonTest{
                 $output .= '</div>';
             }
         }
+
         return $output;
     }
 
@@ -211,8 +213,10 @@ class tenonOutput extends tenonTest{
                 fputcsv($fp, $fields);
             }
             fclose($fp);
+
             return true;
         }
+
         return false;
     }
 } 
