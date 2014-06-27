@@ -10,7 +10,7 @@
 class tenonTest
 {
     protected $url, $opts;
-    public $tenonResponse;
+    public $tenonResponse, $tCode;
 
     /**
      * Class constructor
@@ -59,6 +59,8 @@ class tenonTest
             print_r(curl_getinfo($ch));
             echo '</pre>';
         }
+
+        $this->tCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
         //close connection
         curl_close($ch);
