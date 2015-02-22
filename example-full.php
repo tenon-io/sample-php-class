@@ -4,7 +4,7 @@ require('tenonOutput.class.php');
 
 
 $expectedPost = array('src', 'url', 'level', 'certainty', 'priority',
-    'docID', 'projectID', 'reportID', 'viewport',
+    'docID', 'projectID',  'viewport',
     'uaString', 'importance', 'ref', 'importance',
     'fragment', 'store', 'csv');
 
