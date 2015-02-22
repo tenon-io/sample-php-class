@@ -3,7 +3,7 @@ require('config.php');
 require('tenonTest.class.php');
 
 $expectedPost = array('src', 'url', 'level', 'certainty', 'priority',
-    'docID', 'systemID', 'reportID', 'viewport',
+    'docID', 'projectID', 'reportID', 'viewport',
     'uaString', 'importance', 'ref', 'importance',
     'fragment', 'store', 'csv');
 

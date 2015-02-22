@@ -75,7 +75,7 @@ class tenonOutput extends tenonTest
         $output .= '<li>Priority: ' . $this->rspArray['request']['priority'] . '</li>';
         $output .= '<li>Importance: ' . $this->rspArray['request']['importance'] . '</li>';
         $output .= '<li>Report ID: ' . $this->rspArray['request']['reportID'] . '</li>';
-        $output .= '<li>System ID: ' . $this->rspArray['request']['systemID'] . '</li>';
+        $output .= '<li>System ID: ' . $this->rspArray['request']['projectID'] . '</li>';
         $output .= '<li>User-Agent String: ' . $this->rspArray['request']['uaString'] . '</li>';
         $output .= '<li>URL: ' . $this->rspArray['request']['url'] . '</li>';
         $output .= '<li>Viewport: ' . $this->rspArray['request']['viewport']['width'] . ' x ' . $this->rspArray['request']['viewport']['height'] . '</li>';

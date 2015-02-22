@@ -5,7 +5,7 @@ require('tenonTest.class.php');
 // this section basically creates the $opts array from the $_POST data
 // it only sets the items that are non-blank. This allows Tenon to revert to defaults
 $expectedPost = array('src', 'url', 'level', 'certainty', 'priority',
-    'docID', 'systemID', 'reportID', 'viewPortHeight', 'viewPortWidth',
+    'docID', 'projectID', 'reportID', 'viewPortHeight', 'viewPortWidth',
     'uaString', 'importance', 'ref', 'importance', 'fragment', 'store');
 
 foreach ($_POST AS $k => $v) {
