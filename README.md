@@ -1,10 +1,10 @@
-#Tenon Demo Example - PHP
+# Tenon Demo Example - PHP
 
 ## Intro
 
 You need a Tenon API key to use this. Register at [https://tenon.io/register.php](https://tenon.io/register.php)
 
-You should eventually dive right into the documentation to make your own awesome stuff with Tenon API [https://bitbucket.org/tenon-io/tenon.io-documentation/](https://bitbucket.org/tenon-io/tenon.io-documentation/)
+You should eventually dive right into the documentation to make your own awesome stuff with Tenon API [https://tenon.io/documentation](https://tenon.io/documentation)
 
 ## Install
 
